@@ -1,0 +1,30 @@
+﻿@model Student
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            Student Details
+        </div>
+        <div class="card-body">
+
+            <dl class="row">
+                <dt class="col-sm-3">ID</dt>
+                <dd class="col-sm-9">@Model?.Id</dd>
+
+                <dt class="col-sm-3">Name</dt>
+                <dd class="col-sm-9">@Model?.Name</dd>
+
+                <dt class="col-sm-3">Age</dt>
+                <dd class="col-sm-9">@Model?.Age</dd>
+
+                <dt class="col-sm-3">Email</dt>
+                <dd class="col-sm-9">@Model?.Email</dd>
+
+                <dt class="col-sm-3">Image</dt>
+                <dd class="col-sm-9">
+                    <img src="~/images/@Model?.ImageUrl" alt="@Model?.Name" class="img-thumbnail" style="width:150px" />
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
